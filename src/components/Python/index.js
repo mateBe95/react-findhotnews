@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Grid, Row} from 'react-bootstrap';
+import { Grid, Row } from 'react-bootstrap';
 import Table from '../Table/index';
 import { Button, Loading } from '../Button/index';
 import Search from '../Search/index';

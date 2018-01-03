@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import list from '../../list.js';
-import {Grid, Row, FormGroup} from 'react-bootstrap';
-import PropTypes from 'prop-types';
-import { sortBy } from 'lodash';
+import { Grid, Row } from 'react-bootstrap';
 import Table from '../Table/index';
 import { Button, Loading } from '../Button/index';
 import Search from '../Search/index';
@@ -21,16 +18,6 @@ const url = `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${DEFAULT_QUERY}
 console.log(url);
 
 
-
-
-
-
-
-function isSearched(searchTerm){
-  return function(item){
-    return !searchTerm || item.title.toLowerCase().includes(searchTerm.toLowerCase());
-  }
-}
 
 
 //highher order component
