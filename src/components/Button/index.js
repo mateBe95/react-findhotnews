@@ -2,13 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Button = ({onClick, children, className}) =>
-<button 
-  className={className}
-  type="button"
-   onClick={onClick}>
-   {children}
-   </button>
+export const Button = ({ onClick, children, className='' }) => 
+  <button
+    className={ className }  
+    onClick={ onClick } >
+    { children }
+  </button>
 
    Button.propTypes = {
      onClick: PropTypes.func,
